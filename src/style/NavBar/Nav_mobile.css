@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: black;
+    --font-color: white;
+    --border-color: #ff483b;
+    --font-size: 25px;
+    --font-family: 'Poppins', sans-serif;
+    --navchild-background: white;
+    --box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    --navchild-hover: #e6e6e6;
+}
+.mobile_nav_main{
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    position: relative;
+}
+.mobile_nav_upbody{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+}
+.mobile_nav_lef{
+    position: absolute;
+    left: 0;
+    width: 20vw;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mobile_nav_lef img{
+    width: fit-content;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.mobile_nav_right{
+    width: 75vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+}
+.mobile_nav_right_element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.mobile_nav_right_element i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.mobile_nav_downbody{
+    position: absolute;
+    top: 50px;
+    width: 100vw;
+    max-width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_nav_downbody_search{
+    width: 98vw;
+    border-radius: 4px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--font-color);
+}
+.mobile_nav_downbody_search_btn i{
+    font-size: 20px;
+    color: var(--main-color);
+}
+.mobile_nav_downbody_search_box{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile_nav_downbody_search_box input{
+    outline: none;
+    padding:0 1vw;
+    background: transparent;
+    color: var(--main-color);
+    width: 80vw;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid var(--border-color);
+    font-size: 16px;
+}
