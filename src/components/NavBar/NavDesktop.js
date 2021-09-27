@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../../style/NavBar/Nav_desktop.css";
-
+import Search_Result_Desk from "./Search_Result_Desk";
 const childbar = {
     first : [
         {one: "fas fa-user-plus"       ,two: "Sign Up"},
@@ -15,6 +15,15 @@ const childbar = {
     ]
 }
 function NavDesktop() {
+    const [value,setSearch] = useState(0);
+    const SearchResult = () =>{
+        if(value){
+            return <Search_Result_Desk prop = {value} />
+        }
+        else{
+            return null
+        }
+    }
     return (
         <div className="navbar_main">
             <div className="navbar_logo">
@@ -61,8 +70,11 @@ function NavDesktop() {
                     </div>
                     <div className="navbar_items_child_box" id="navbar_items_child_box_search">
                         <div className="navbar_items_child_item" id="navbar_items_child_item_search">
-                            <input type="text" id="navbar_items_child_item_input" placeholder="search here...."/>
+                            <input type="text" id="navbar_items_child_item_input" onKeyUp={e=>setSearch(e.target.value)} placeholder="search here...." autoComplete="off"/>
                             <a href="#"><i className="fas fa-search"></i></a>
+                            {
+                                SearchResult()
+                            }
                         </div>
                     </div>
                     <div className="navbar_items_child_box" id="navbar_items_child_box_cart">
