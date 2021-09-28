@@ -2,18 +2,39 @@ const Data = [
     {
         vall :[
             {
-               value : "heynikeshoes"
+               value : "nikeshoes",
+               realValue : "Nike Shoes",
+               realData : {
+
+               }
             },
             {
-                value : "heypumashoes"
+                value : "pumashoes",
+                realValue : "Puma Shoes",
+                realData :{
+
+                }
             },
             {
-                value : "heybatashoes"
+                value : "batashoes",
+                realValue : "Bata Shoes",
+                realData : {
+
+                }
             }
         ]
     },
     {
-        vall : "hey hetu"
+        vall :[
+            {
+                value : "hey beta",
+                realValue : "Hey Hetu",
+                realData : {
+
+                }
+            }
+
+        ]
     }
 ]
 export default Data

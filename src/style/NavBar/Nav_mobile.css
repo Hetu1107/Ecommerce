@@ -85,7 +85,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     background-color: var(--font-color);
 }
 .mobile_nav_downbody_search_btn i{
@@ -106,6 +106,10 @@
     width: 80vw;
     height: 30px;
     border-radius: 4px;
-    border: 2px solid var(--border-color);
+    border: 2px solid rgba(0, 0, 0, 0.7);
     font-size: 16px;
+}
+::selection{
+    background: black;
+    color: white;
 }

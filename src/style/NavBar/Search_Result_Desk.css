@@ -1,0 +1,29 @@
+.search_result_box_desk{
+    position: absolute;
+    width: 100%;
+    padding: 10px 0;
+    height: fit-content;
+    max-height: 350px;
+    border-radius: 3px;
+    background: #ffffff;
+    top: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search_result_box_desk #search_result_items{
+    width: 100%;
+    padding: 10px 0;
+    height: 20px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 0px;
+}
+.search_result_box_desk #search_result_items:hover{
+    background: rgba(0, 0, 0, 0.09);
+}

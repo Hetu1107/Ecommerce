@@ -8,7 +8,7 @@ function App() {
     const [size,setsize] = useState(window.outerWidth);
     window.addEventListener('resize', ()=>setsize(window.outerWidth));
     const windowReset = () =>{
-        if(size>=800){
+        if(size>=850){
             return <NavDesktop/>
         }
         else{
